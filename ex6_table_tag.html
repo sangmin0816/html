@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 관련 태그</title>
+    <style>
+        /* style 각주는 모양이 다르다. 테이블 스타일 */
+        .tb1{width: 800px; margin: auto;}
+        .tb1 th{background-color: deeppink; color: white}
+        .tb1 td{border-bottom: 2px solid black; text-align: center; line-height: 38px}
+    </style>
+</head>
+<body>
+    <h1>테이블 태그</h1>
+    <table class="tb1">
+        <caption>
+            <h2>천재교육 풀스택 2기 성적표</h2>
+        </caption>
+        <!-- thead, tfoot, caption은 선택. 웹표준에 위배되지 않음 -->
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>이름</th>
+                <th>점수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>김일일</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>김이이</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>김삼삼</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>김사사</td>
+                <td>44</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>김오오</td>
+                <td>55</td>
+            </tr>
+        </tbody>
+        <tfoot><td colspan="3" style="color: darkmagenta; font-weight: bolder; font-size: 20px;">전원 통과</td></tfoot>
+    </table>
+</body>
+</html>

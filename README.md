@@ -26,5 +26,9 @@
 - [Ex4](/ex3_list_component.html)
 - [Ex5](/ex5_media_tag.html)
 
+# 0705 내용
+- [Ex5](/ex5_media_tag.html)
+- [Ex6](/ex6_table_tag.html)
+- [Ex7](/ex7_form_tag.html)
 
 [🆙목차로](#목차)

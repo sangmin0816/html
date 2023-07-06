@@ -14,11 +14,32 @@
     <hr>
 
     <h3>오디오</h3>
-    <audio src="./sound/a01_Ground Theme.mp3" controls ></audio>
+    <audio autoplay muted controls >
+        <source src="./sound/ditto.mp3" type="audio/mp3">
+        <source src="./sound/ditto.ogg" type="audio/ogg">
+        <source src="./sound/ditto.wav" type="audio/x-wav">
+        <!-- 
+            type = 'audio/mp3' = 'audio/mpeg'
+            type = 'audio/wav'해도 인식함
+            크로스 브라우징 처리(호환성 테스트). 지원되면 그것만 실행함.
+        -->
+    </audio>
     <hr>
 
     <h3>비디오</h3>
-    <video src="./movie/ditto.mp4" width="560" height="315" controls></video>
+    <video width="560" height="315" controls poster="./image/ditto.jpg">
+        <source src="./movie/ditto.mp4" type="video/mp4">
+        <source src="./movie/ditto.webm" type="video/webm">
+        <source src="./movie/ditto.ogv" type="video/ogg">
+
+        <!-- 
+            ogv는 비디오이지만 type='video/ogg'로 사용
+            poster는 비디오의 표지. 썸네일.
+            제어하는 여러 태그들이 있다. 볼륨 제거 등.
+            온라인 강좌 보안이 안 되어 있으면 요소 검색하면 다운받을 수 있다. vp-target을 hidden하거나 vimeo해야 다운 안 됨
+        -->
+        
+    </video>
     <hr>
     
     <h3>iframe 요소</h3>
